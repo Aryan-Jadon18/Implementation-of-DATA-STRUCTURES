@@ -45,8 +45,11 @@ void print(node* &head){
 /*--------------------------------------------------*/
 
 int main(){
-    node* node1= new node(10);
-    cout<<node1-> data <<endl;
-    cout<<node1 -> next <<endl;
+    node* node1=new node(10);
+    node* head= node1;
+    node* tail= node1;
+    insertattail(tail,15);
+    insertattail(tail,134);
+    print(head);
     return 0;
 }
